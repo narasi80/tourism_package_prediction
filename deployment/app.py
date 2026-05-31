@@ -5,7 +5,8 @@ from huggingface_hub import hf_hub_download
 import joblib
 
 # Download and load the trained tourism prediction model
-model_path = hf_hub_download(repo_id="<---repo id---->/tourism_package_prediction", filename="best_model.pkl")
+
+model_path = hf_hub_download(repo_id="Narasi/tourism_package_model", filename="best_tourism_package_model_v1.joblib")
 model = joblib.load(model_path)
 
 # Streamlit UI
