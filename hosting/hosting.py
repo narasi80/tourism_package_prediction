@@ -14,7 +14,7 @@ try:
     print(f"Space '{repo_id}' already exists.")
 except RepositoryNotFoundError:
     print(f"Space '{repo_id}' not found. Creating...")
-    create_repo(repo_id=repo_id, repo_type=repo_type, private=False, token=HF_TOKEN, space_sdk="gradio")
+    create_repo(repo_id=repo_id, repo_type=repo_type, private=False, token=HF_TOKEN, space_sdk="streamlit")
     print(f"Space '{repo_id}' created.")
 
 # Upload deployment folder using relative path
